@@ -1,9 +1,9 @@
 'use strict';
 
 const thumb=document.querySelectorAll('.thumb');
-thumbs.forEach((item,index) => {
+thumbs.forEach(function(item,index) {
     item.onclick=function(){
-        console.log(this.dataset.image);
+        document.getElementById('bigimg').src=this.dataset.image;
     }
-    
+
 });
